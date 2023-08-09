@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#wrapper{
+
+
+    background-color: white;
+}
+
+
+/* 헤더 */
+header{
+
+    height: 50px;
+    padding: 10px;
+    background-color: #FBE571;
+}
+
+
+h1{
+    margin: 10px;
+}
+
+.search {
+    position: relative;
+    width: 60%;
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    width: 100%;
+    border: 1px solid #FBF0B5;
+    border-radius: 80px;
+    padding: 10px 12px;
+    background-color: #FBF0B5;
+    font-size: 14px;
+}
+
+menu{
+
+     padding: 10px;
+     border-style: ridge;
+     margin: 0;
+    height: 20px;
+}
+
+
+log{
+     float: right;
+}
+
+/*본문 */
+
+body{
+    font-size: 0.9em;
+
+}
+
+
+
+p{
+    color : black;
+    margin-bottom: 36px;
+    margin-right: 50px;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+}
+a:hover
+{color: darkgray; background-color: #f5f2ec;}
+ol{
+    background-color: 0;
+    padding: 10px;
+}
+li{
+    display: inline;
+    margin: 10px; /* 카테고리 */
+}
+main{
+    padding:10px;
+}
+div{
+    color : black;
+position: relative;
+
+}
+h2{
+    font-size: 40px;
+    position: relative;
+    float:center;
+}
+
+info{
+    font-size: 30px;
+    position: relative;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    float:center;
+    padding:0;
+    margin: 0px 200px 0px 200px;
+}
+
+
+
+/* lnb */
+#lnb {position: absolute;width: 170px;}
+#lnb h3{margin: 0px; height: 40px;text-align: center;font-size: 20px;line-height: 2.2; color:black; background: #f5f2ec;}
+#lnb > ul {}
+#lnb > ul > li { border-bottom: 1px solid #dcdcdc;}
+#lnb > ul > li > a {display: block;padding: 5px 35px 10px 20px; color: inherit; font-size: 14px;background:#f5f2ec ;}
+#lnb > ul > li a:hover {color: darkgray; background-color: #f5f2ec;}
+#lnb > ul > li.on > a {color: #d91c1b; background: #f5f2ec;}
+#lnb > ul > li ul {display: none;}
+#lnb > ul > li > ul > li > a {display: block;padding: 0 25px 14px 14px;color: #inherit; font-size: 12px;background: #f5f2ec;}
+#lnb > ul > li > ul > li > a {color: #d91c1b; background-color: #f5f2ec; }
+#lnb > ul li.noDepth a {background-image: none !important; }
+#lnb i {
+margin: 2px;
+position: absolute;
+right:0;
+font-size: 12px;}
+
+/*테이블*/
+
+
+/*footer : 아래 MACDIA*/
+footer{
+    clear: both;
+    padding: 1px;
+    background-color: #EFEFEF;
+    color: gray;
+}
+footer h2{
+    color: #cccccc;
+}
+footer p{
+    color: #737373;
+}
+
+
+</style>

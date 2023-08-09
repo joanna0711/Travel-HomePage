@@ -1,0 +1,140 @@
+.main{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1060px;
+    height: 40px;
+}
+
+input{
+    width: 100%;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    height: 15px;
+}
+
+.tag{
+    color: #09D3FF;
+}
+
+span{
+    margin-right: 15px;
+    float: left;
+    font-size: 29px;
+}
+
+.title{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    width: 1060px;
+    height: 40px;
+}
+
+.content{
+    margin: 0 auto;
+    margin-bottom: 18px;
+    width: 1060px;
+    height: 360px;
+    margin-top: 30px;
+}
+
+.mintag{
+    margin: 0 auto;
+    width: 1060px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.icon{
+    margin: 0 auto;
+    width: 1060px;
+    height: 40px;
+}
+
+.comment{
+    margin: 0 auto;
+    width: 1060px;
+}
+
+.modify{
+    font-size: 20px;
+    color: #09D3FF;
+    float: right;
+    border: none;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal.show{
+    display: block;
+}
+  
+.modal_body{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 20px;
+    width: 1000px;
+    height: 650px;
+    background-color: #FBFBFB;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.m1{
+    margin: 0 auto;
+    width: 900px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.m2{
+    margin: 0 auto;
+    width: 900px;
+    height: 45px;
+    margin-top: 20px;
+}
+
+.category{
+    width: 100px;
+    height: 33px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+    float: right;
+}
+
+.m3{
+    margin: 0 auto;
+    width: 900px;
+    height: 45px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.m4{
+    margin: 0 auto;
+    width: 900px;
+    height: 45px;
+}
+
+.write{
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 100px;
+    height: 35px;
+    background-color: #FBE571;
+    display: flex;
+}

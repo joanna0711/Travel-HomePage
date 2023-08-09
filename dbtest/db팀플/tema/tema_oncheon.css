@@ -1,0 +1,131 @@
+*{
+    -webkit-font-smoothing: antialised;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+      margin-top: 5em;
+      font: 20px/1.5 "Helvetica", Arial, sans-serif;
+  }
+
+  .nav{
+    position: absolute;
+    width: 1932px;
+    height: 208px;
+    left: -12px;
+    top: 0px;
+    background-color: #FBE571;
+  }
+
+  .text_bold{
+    display: inline;
+    color:orange;
+    font-weight: bold;
+  }
+
+  .titles{
+    font-size: 55px;
+    margin: 40px;
+  }
+
+  .slide img{
+    width: 492px;
+    height: 441px;
+    object-fit: cover;
+  }
+
+  .container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 80px;
+  }
+  
+  .slider-container {
+      position: absolute;
+      width:100%;
+      left:0;
+  }
+  
+  .slide {
+      position: absolute;
+      width: 100%;
+      padding:0 10%;
+      box-sizing:border-box;
+      top: 67%;
+      transform: translateY(-50%);
+      text-align: center;
+      overflow: hidden;
+  }
+  
+  .slider-container.animated {
+      -webkit-transition: left .3s ease-in;
+      transition: left .3s ease-in;
+  }
+  
+  /* blockquote {
+      color: #636363;
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 1.5em;
+  } */
+  
+  cite {
+      font-size: .75em;
+      font-weight: 700;
+      font-style: normal;
+  }
+  
+  /* Utility */
+  .simple-list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  }
+  
+  /* Nav */
+  #prev,
+  #next {
+      position: absolute;
+      top: 66%;
+      left:50%;
+      transform: translateY(-50%);
+      z-index: 999999;
+      display: inline-block;
+      height: 5em;
+      width: 5em;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-transition: all .3s ease-in;
+      transition: all .3s ease-in;
+  }
+  
+  #prev.disabled, #next.disabled { display:none;}
+  
+  #prev { background-image: url('arrow-left-out.svg'); margin-left:-480px;}
+  
+  #prev:hover { background-image: url('arrow-left-over.svg'); }
+  
+  #next {
+      margin-left:380px;
+      background-image: url('arrow-right-out.svg');
+  
+  }
+  
+  #next:hover { background-image: url('arrow-right-over.svg'); }
+  
+  .pager {
+      position: absolute;
+      left: 0;right: 0;bottom: -70px;
+      text-align: center;
+      margin:0; padding: 0;
+  }
+  .pager span{
+      width: 10px;height: 10px;background:#ccc;
+      border-radius:50%; display: inline-block; text-indent: -9999em;
+      margin:0 5px;
+  }
+  .pager span.active{
+      background: #333;
+  }
+  

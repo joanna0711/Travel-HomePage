@@ -1,0 +1,82 @@
+<?php
+
+if(strtoupper($_SERVER['REQUEST_METHOD']) == "POST"){
+    ini_set('display_errors', '1');
+    $UserName = $_POST['UserName'];
+    $UserPassword = $_POST['UserPassword'];
+    $UserID = $_POST["UserID"];
+    $password_confirm = $_POST['password_confirm'];
+    $UserBirth = date('UserBirth');
+    $UserSex = $_POST['UserSex'];
+    $UserPhoneNumber = $_POST['UserPhoneNumber'];
+    $db = '
+    (DESCRIPTION = 
+        (ADDRESS_LIST=
+            (ADDRESS = (PROTOCOL = TCP)(HOST = 203.249.87.57)(PORT = 1521))
+        )
+        (CONNECT_DATA = 
+        (SID = orcl)
+        )
+    )';
+    if (!is_null($UserName)) {
+        $connect = oci_connect("DBA2022G5", "test1234", $db);
+        $sql = "SELECT UserID FROM UserTable WHERE UserID = '$UserID'";
+        $stid = oci_parse($connect, $sql);
+        oci_execute($stid);
+        $result = array();
+        oci_fetch_all($stid,$result,0,-1,OCI_FETCHSTATEMENT_BY_ROW);
+        if (count($result)) {
+            $wu = 1;
+        } else { 
+
+            oci_bind_by_name($result,":username",$UserName);
+            oci_bind_by_name($result,":pw",$true_password);
+            oci_bind_by_name($result,":userid",$UserID);
+            oci_bind_by_name($result,":userbirth",$UserBirth);
+            oci_bind_by_name($result,":usersex",$UserSex);
+            oci_bind_by_name($result,":userphonenumber",$UserPhoneNumber)            $true_password = password_hash($UserPassword, PASSWORD_DEFAULT);
+            $add_user = "INSERT INTO UserTable ( UserName, UserPassword, UserID, UserBirth, UserSex, UserPhoneNumber ) VALUES ( :username, :pw, :userid, TO_DATE(:userbirth,'yyyy-mm-dd'), :usersex, :userphonenumber )";
+            $result = oci_parse($connect, $add_user);;
+            oci_execute($result);
+            echo "Success";
+            oci_close($connect);
+        }
+    }
+}
+
+?>
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>회원 가입</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            font-size: 14px;
+        }
+
+        input,
+        button {
+            font-family: inherit;
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>회원 가입</h1>
+    <form action="test.php" method="POST">
+        <p><input type="text" name="UserName" placeholder="사용자 이름" required></p>
+        <p><input type="text" name="UserID" placeholder="아이디" required></p>
+        <p><input type="password" name="UserPassword" placeholder="비밀번호" required></p>
+        <p><input type="password" name="password_confirm" placeholder="비밀번호 확인" required></p>
+        <p><input type="date" name="UserBirth" placeholder="생년월일" required></p>
+        <p><input type="text" name="UserSex" placeholder="성별" required></p>
+        <p><input type="text" name="UserPhoneNumber" placeholder="핸드폰 번호" required></p>
+        <p><input type="submit" value="회원 가입"></p>
+    </form>
+</body>
+
+</html>

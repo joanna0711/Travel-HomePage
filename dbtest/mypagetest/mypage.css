@@ -1,0 +1,379 @@
+*{
+    -webkit-font-smoothing: antialised;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.search_nav{
+    position: absolute;
+    width: 1920px;
+    height: 129px;
+    left: 0px;
+    top: 0px;
+    background: #FBE571;
+}
+
+.search_nav ul{
+    display: flex;
+    position: relative;
+    top: 40px;
+}
+
+.search_nav ul>li:first-child{
+    position: absolute;
+    top: -2px;
+    left:100px;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+
+.mainsearch{
+    position: absolute;
+    top: -10px;
+    left:280px;
+    width: 896px;
+    height: 60px;
+    background: rgba(230, 230, 230, 0.5);
+    border-radius: 30px;
+}
+.mainsearch > form {
+    text-align: center;
+  
+}
+.mainsearch > form > input{
+    font-size: 16px;
+    border: none;
+    margin-top: 9px;
+    width: 700px;
+    height: 40px;
+    background: rgba(230, 230, 230, 0);
+    outline: none;
+}
+
+.mainsearch button{
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0);
+    border: none;
+    margin-left: 80px;
+    font-size: 22px;
+}
+
+.search_nav ul>li:last-child{
+    position: absolute;
+    top: -3px;
+    right:100px;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.search_nav ul>li:last-child i{
+    margin-right: 15px;
+}
+
+.nav{
+    position: relative;
+    width: 1920px;
+    height: 78px;
+    background-color: white;
+    top: 129px;
+    border-bottom: 1px solid #C1C1C1;
+    display: flex;
+}
+
+.nav ul{
+    position: relative;
+    display: flex;
+    font-weight: 550;
+    font-size: 16px;
+    left: 100px;
+    text-align: center;
+    line-height: 73px;
+    
+}
+
+.nav ul:first-child li i{
+    font-size: 20px;
+}
+.nav ul:first-child{
+    padding: 0;
+}
+
+.nav ul li:not(:first-child){
+    cursor: pointer;
+}
+.nav ul:first-child li{
+    /* margin-right: 86px; */
+    width: 160px;
+    height: 78px;
+}
+
+
+.nav ul:last-child{
+    margin-left: 460px;
+    padding: 0;
+}  
+
+.nav ul:last-child li{
+    width: 90px;
+}  
+
+.nav ul li:not(:first-child):hover{
+    background-color: #FBE571;
+}
+
+.mypage_nav{
+    position: relative;
+    top:300px;
+    left: 140px;
+    width: 385px;
+    height: 455px;
+}
+
+.mypage_nav ul{
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+}
+.mypage_nav ul li{
+    width: 100%;
+    height: 91px;
+    text-align: center;
+    line-height: 5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mypage_nav ul li:first-child{
+    font-weight: bold;
+    font-size:24px;
+    line-height: 4;
+}
+
+.mypage_nav ul li:first-child::after{
+    content: "";
+    position: relative;
+    display: block;
+    background-color: #FBE571;
+    z-index: 1;
+    bottom: 10px;
+    width: 100px;
+    height: 5px;
+    left: 140px;
+}
+
+.mypage_nav ul li:not(:first-child):hover{
+    background-color: #E7E6E6;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#mypage_content1{
+    position: relative;
+    top:-270px;
+    left:640px;
+}
+
+#mypage_content1>ul>li:first-child{
+    font-size: 55px;
+}
+
+#mypage_content1>ul>li:nth-child(2){
+    position: relative;
+    top: 70px;
+    font-size: 26px;
+}
+
+#mypage_content1>ul>li:nth-child(2) i{
+    font-size: 140px;
+    color: #FBE571;
+    margin-left: 350px;
+}
+
+#mypage_content1>ul>li:nth-child(3){
+    position: relative;
+    top: 150px;
+    font-size: 26px;
+}
+
+#mypage_content1>ul>li:nth-child(3) ul {
+    background-color: #E9E9E9;
+    width: 700px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 14px;
+}
+
+#mypage_content1>ul>li:nth-child(3) ul i{
+    margin-right: 10px;
+}
+
+#mypage_content2{
+    position: relative;
+    width: 1080px;
+    top:-290px;
+    left:640px;
+}
+#mypage_content2 div{
+    font-size: 45px;
+    font-weight: bold;
+    width: 1000px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+#mypage_content2 p{
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 34px;
+}
+.mypage_table input{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.mypage_table label{
+    margin-right: 10px;
+}
+
+.mypage_table{
+    border-collapse: collapse;
+    border-left: none;
+    border-right: none;
+}
+
+#mypage_content3{
+    position: relative;
+    width: 1080px;
+    top:-290px;
+    left:640px;
+}
+
+#mypage_content3 div{
+    font-size: 45px;
+    font-weight: bold;
+    width: 1000px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+.mypage-parti{
+    display: flex;
+    position: relative;
+    top:50px;
+}
+
+.mypage-parti li i{
+    margin-right: 10px;
+}
+.mypage-parti li p{
+    font-size: 23px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    font-weight: bold;
+}
+
+.mypage-parti li ul{
+    margin-right: 60px;
+    width: 240px;
+    background-color: #D9D9D9;
+    height: 330px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.mypage-parti li ul li{
+    margin-bottom: 20px;
+}
+
+#mypage_content4{
+    position: relative;
+    width: 1080px;
+    top:-290px;
+    left:640px;
+}
+
+#mypage_content4>div:first-child{
+    font-size: 45px;
+    font-weight: bold;
+    width: 1000px;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+#mypage_content4>div:nth-child(2){
+    height: 100px;
+    width: 1000px;
+    border-bottom: 2px solid #CDCDCD;
+}
+
+#mypage_content4>div:nth-child(2) ul{
+    display: flex;
+}
+
+#mypage_content4>div:nth-child(2) ul>li:first-child{
+    background-color: #1B0069;
+    color: white;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#mypage_content4>div:nth-child(2) ul>li:last-child{
+    margin-left: 600px;
+    font-size: 30px;
+    margin-top: 25px;
+}
+
+#mypage_content4>div:nth-child(2) ul>li:last-child i{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.mypage-trip>ul{
+    display: flex;
+}
+
+.mypage-trip>ul>li>ul{
+    padding: 0;
+}
+
+.mypage-trip>ul>li{
+    margin-right: 60px;
+    margin-top: 30px;
+    width: 240px;
+    background-color: #D9D9D9;
+    height: 330px;
+    border-radius: 30px;
+    padding: 15px;
+}
+.mypage-trip>ul>li>ul li:first-child{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mypage-trip>ul>li>ul li:first-child span{
+    margin-right: 7px;
+}
+.mypage-trip>ul>li>ul li{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.mypage-trip>ul>li>ul li:last-child{
+    margin-top: 47px;
+    margin-left: 220px;
+    cursor: pointer;
+}
+
+#mypage_content1,#mypage_content2,#mypage_content3,#mypage_content4{
+    display: none;
+}

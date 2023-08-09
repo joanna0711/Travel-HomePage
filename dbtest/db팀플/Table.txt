@@ -1,0 +1,76 @@
+Table 작성
+
+Create Table UserTable(
+  UserName VARCHAR2(30) NOT NULL,
+  UserID VARCHAR2(50) NOT NULL,
+  UserPassword VARCHAR2(255) NOT NULL,
+  UserSex VARCHAR2(10) NOT NULL,
+  UserPhoneNumber VARCHAR2(50) NOT NULL,
+  UserDate DATE NOT NULL,
+  UserThema VARCHAR2(50),
+  UserPurpose VARCHAR2(50),
+  UserNumberPeople VARCHAR2(50),
+  UserFamilyType VARCHAR2(50),
+  UserAnimal VARCHAR2(50),
+  Num VARCHAR2(50),
+  PRIMARY KEY(UserID),
+  FOREIGN KEY(Num) REFERENCES 
+  PostTable(Num)  ON DELETE SET NULL
+);
+drop table usertable;
+
+Create Table PostTable(
+  Title VARCHAR2(50) NOT NULL,
+  Content VARCHAR2(255) NOT NULL,
+  Num VARCHAR2(50) NOT NULL,
+  Post_Date DATE NOT NULL,
+  Heart VARCHAR2(50) NOT NULL,
+  RegionTitle VARCHAR2(50),
+  TagTitle VARCHAR2(50),
+  Coment_Date Date,
+  PRIMARY KEY(Num),
+  FOREIGN KEY(Coment_Date) REFERENCES 
+  ComentTable(Coment_Date) ON DELETE SET NULL
+);
+
+//
+  FOREIGN KEY(RegionTitle) REFERENCES 
+  RegionTable(RegionTitle) ON DELETE SET NULL
+  FOREIGN KEY(TagTitle) REFERENCES 
+  TagTable(TagTitle) ON DELETE SET NULL
+  FOREIGN KEY(Coment_Date) REFERENCES 
+  ComentTable(Coment_Date) ON DELETE SET NULL//
+
+
+Create Table RegionTable(
+  RegionTitle VARCHAR2(50) NOT NULL
+);
+
+Create Table TagTable(
+  TagTitle VARCHAR2(50) NOT NULL
+);
+
+CREATE TABLE ComentTable
+(
+  Coment VARCHAR2(255) NOT NULL,  
+  Coment_Date DATE NOT NULL,
+  PRIMARY KEY(Coment_Date)
+);
+
+-----------------------------------
+<post>
+title
+content
+num
+date
+
+<region>
+num , location
+
+<tag>
+tagtitle , num - PK,FK(POSTTABLE)
+
+
+<coment>
+date
+content , num

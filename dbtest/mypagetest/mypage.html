@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mypage.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9912971766.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    </style>
+</head>
+<body>
+    
+    <div class="nav_container">
+        <div class="search_nav">
+            <ul>
+                <li>MADIA</li>
+                <li class="mainsearch">
+                    <form id="mainsearch" action="/">
+                        <input type="text" name="mainsearch" placeholder="메인 검색">
+                        <button><i class="fas fa-search"></i></button>
+                      </form>
+                </li>
+                <li>
+                    <i class="fas fa-user-circle"></i>
+                    <i class="fas fa-heart"></i>
+                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-bars"></i>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div class="nav">
+            <ul>
+                <li><i class="fas fa-bars" style="margin-right: 10px;"></i>카테고리</li>
+                <li>지역별보기</li>
+                <li>추천여행지</li>
+                <li>테마여행</li>
+                <li>오늘의태그</li>
+                <li>고객센터</li>
+            </ul>
+
+            <ul>
+                <li>로그인</li>
+                <li>회원가입</li>
+                <li>마이페이지</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="mypage_container">
+        <div class="mypage_nav">
+            <ul>
+                <li>마이페이지</li>
+                <li><a href="#mypage_content5" class="mypage_active">개인정보<i class="fas fa-chevron-down" style="position: relative; left:100px"></i></a></li>
+                <li><a href="#mypage_content2" >여행타입<i class="fas fa-chevron-down" style="position: relative; left:100px"></i></a></li>
+                <li><a href="#mypage_content3" >참여내역<i class="fas fa-chevron-down" style="position: relative; left:100px"></i></a></li>
+                <li><a href="#mypage_content4" >플래너<i class="fas fa-chevron-down" style="position: relative; left:107px"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="mypage_main">
+            <div id="mypage_content1" class="mypage_active">
+                <ul>
+                    <li>안녕하세요, MADIA <span style="color:#0074FD">FAMILY</span> <b>송원정</b>님 !</li>
+                    <li>
+                        <p>개인정보 수정</p> 
+                        <i class="fas fa-user-circle"></i>
+                    </li>
+                    <li>
+                        <span>참여내역</span>
+                        <ul>
+                            <li><i class="fas fa-list-alt"></i>내가 쓴 글</li>
+                            <li><i class="fas fa-comment"></i>댓글 단 글</li>
+                            <li><i class="fas fa-heart"></i>좋아요 한 글</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="mypage_content2"> 
+                <div>개인정보</div>
+                <p>선호하는 여행 타입</p>
+                <table border="1" width='1000' height="320" align="center" class="mypage_table">
+                    <tr>
+                        <td bgcolor="D9D9D9" align="center">여행테마</td>
+                        <td>
+                            <form action="">
+                                <input type="radio"  value="tourism" name="테마"><label>목적</label>
+                                <input type="radio"  value="recreation" name="테마"><label>휴양</label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="D9D9D9" align="center">여행목적</td>
+                        <td>
+                            <form action="">
+                                <input type="radio"  value="Anniversary" name="목적"><label>기념일</label>
+                                <input type="radio"  value="family" name="목적"><label>가족여행</label>
+                                <input type="radio"  value="couple" name="목적"><label>커플여행</label>
+                                <input type="radio"  value="friend" name="목적"><label>우정여행</label>
+                                <input type="radio"  value="healing" name="목적"><label>힐링여행</label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="D9D9D9" align="center">인원수</td>
+                        <td>
+                            <form action="">
+                                <input type="radio"  value="one" name="인원"><label>1인</label>
+                                <input type="radio"  value="two" name="인원"><label>2~3인</label>
+                                <input type="radio"  value="three" name="인원"><label>4~5인</label>
+                                <input type="radio"  value="four" name="인원"><label>6~7인</label>
+                                <input type="radio"  value="many" name="인원"><label>8인이상 단체</label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="D9D9D9" align="center">자녀동반</td>
+                        <td>
+                            <form action="">
+                                <input type="radio"  value="infant" name="자녀"><label>영유아</label>
+                                <input type="radio"  value="Elementary" name="자녀"><label>초등학생</label>
+                                <input type="radio"  value="middlehigh" name="자녀"><label>중고등생</label>
+                                <input type="radio"  value="adult" name="자녀"><label>성인</label>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="D9D9D9" align="center">반려동물</td>
+                        <td>
+                            <form action="">
+                                <input type="radio"  value="yes" name="자녀"><label>유</label>
+                                <input type="radio"  value="" name="자녀"><label>무</label>
+                            </form>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="mypage_content3">
+                <div>참여내역</div>
+                <ul class="mypage-parti">
+                    <li>
+                        <p><i class="fas fa-heart"></i>좋아요 한 글</p>
+                        <ul>
+                            <li><i class="fas fa-heart"></i>마라탕 맛집</li>
+                            <li><i class="fas fa-heart"></i>마라탕 맛집</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-comment-dots"></i>댓글 단 글</p>
+                        <ul>
+                            <li><i class="fas fa-comment-dots"></i>마라탕 맛집</li>
+                            <li><i class="fas fa-comment-dots"></i>마라탕 맛집</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-list-alt"></i>작성한 글</p>
+                        <ul>
+                            <li><i class="fas fa-list-alt"></i>마라탕 맛집</li>
+                            <li><i class="fas fa-list-alt"></i>마라탕 맛집</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="mypage_content4">
+                <div>나의 여행</div>
+                <div>
+                    <ul>
+                        <li>
+                            11월 20일 (일) ~ 11월 24일 (목)
+                            <p>성인2명 유아1명</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-pen"></i>
+                            <i class="fas fa-trash"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mypage-trip">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li><span style="color:red">● </span>1일차</li>
+                                <li>숙소 : 해비치호텔</li>
+                                <li>한라산 어승생악</li>
+                                <li>중문관광단지 야경 구경</li>
+                                <li>아점 : 춘미향식당</li>
+                                <li>오셜록티뮤지엄</li>
+                                <li><i class="fas fa-pen"></i></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span style="color:orange">● </span>2일차</li>
+                                <li>숙소 : 해비치호텔</li>
+                                <li>한라산 어승생악</li>
+                                <li>중문관광단지 야경 구경</li>
+                                <li>아점 : 춘미향식당</li>
+                                <li>오셜록티뮤지엄</li>
+                                <li><i class="fas fa-pen"></i></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><span style="color:forestgreen">● </span>3일차</li>
+                                <li>숙소 : 해비치호텔</li>
+                                <li>한라산 어승생악</li>
+                                <li>중문관광단지 야경 구경</li>
+                                <li>아점 : 춘미향식당</li>
+                                <li>오셜록티뮤지엄</li>
+                                <li><i class="fas fa-pen"></i></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="mypage_content5">
+
+            </div>
+        </div>
+    </div>
+    <script src="mypage.js"></script>
+</body>
+</html>

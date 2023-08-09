@@ -1,0 +1,6 @@
+db501group5
+test1234
+sqlplus DBA2022G5/test1234@203.249.87.57:1521/orcl
+
+
+
